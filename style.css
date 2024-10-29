@@ -5,3 +5,133 @@
 html {
   font-size: 10px;
 }
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  font: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  z-index: 3;
+}
+
+#box3,
+#box7,
+#box10,
+#box11,
+#box12,
+#box15 {
+  border-left: 0.3rem solid rgb(72, 32, 112);
+}
+
+#box1,
+#box2,
+#box3,
+#box4,
+#box5,
+#box8,
+#box9,
+#box10,
+#box11 {
+  border-bottom: 0.3rem solid rgb(72, 32, 112);
+}
+
+body {
+  margin: 0;
+  width: 100%vw;
+  min-height: 100vh;
+  background: linear-gradient(rgb(251, 239, 255), rgb(201, 146, 255));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  min-width: 70vmin;
+  min-height: fit-content;
+  padding: 1.5rem;
+  border: 0.3rem dotted rgb(31, 8, 54);
+  background: linear-gradient(rgb(201, 146, 255), rgb(251, 239, 255));
+}
+
+.grid {
+  min-width: 80vmin;
+  min-height: 80vmin;
+  aspect-ratio: 1 / 1;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  border: 0.3rem solid rgb(31, 8, 54);
+}
+
+.grid-items {
+  position: relative;
+  border: 0.1rem solid rgb(150, 101, 199);
+  font-size: 2rem;
+  background-color: alpha;
+  display: flex;
+  flex: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.prompt {
+  position: absolute;
+  z-index: 2;
+  top: 0%;
+  left: 0%;
+  font-size: 2rem;
+  font: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.answer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+input {
+  background-color: rgba(255, 255, 255, 0);
+  xfont-size: 6rem;
+  font: normal normal bold 80% arial;
+}
+
+.special {
+  border: none;
+  font-size: 2rem;
+}
+
+@media (min-width: 475px) {
+  html {
+    font-size: 16px;
+  }
+
+  .grid {
+    border: 0.5rem solid rgb(31, 8, 54);
+  }
+
+  .grid-items {
+    border: 0.15rem solid rgb(150, 101, 199);
+  }
+  #box3,
+  #box7,
+  #box10,
+  #box11,
+  #box12,
+  #box15 {
+    border-left: 0.4rem solid rgb(72, 32, 112);
+  }
+
+  #box1,
+  #box2,
+  #box3,
+  #box4,
+  #box5,
+  #box8,
+  #box9,
+  #box10,
+  #box11 {
+    border-bottom: 0.4rem solid rgb(72, 32, 112);
+  }
+}
